@@ -1,4 +1,6 @@
 <div id="sidebar">
+	<div id="sidebar_top"></div>
+	<div id="sidebar_main">
 	<?php if ( ! dynamic_sidebar( 'Sidebar' )) : ?>
 
 		<li id="sidebar-search" class="widget">
@@ -29,5 +31,7 @@
 			</ul>
 		</li>
 
-	<?php endif; ?>
+	<?php endif; ?>	
+	</div> <!-- #sidebar_main -->
+	<div id="sidebar_bot"></div>
 </div><!--sidebar-->

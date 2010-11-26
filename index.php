@@ -1,5 +1,8 @@
 <?php get_header(); ?>
-	<div id="content">
+
+<div id="content">
+	<div id="content_top"></div>
+	<div id="content_main">
 		<?php if ( ! dynamic_sidebar( 'Alert' ) ) : ?>
 			<!--Wigitized 'Alert' for the home page-->
 		<?php endif ?>
@@ -42,7 +45,10 @@
 				</p>
 			</div><!--.older-->
 		</nav><!--.oldernewer-->
+		
+	</div> <!-- #content_main -->
+	<div id="see_more"><a href="#">더보기</a></div>
+</div> <!-- #content -->
 
-	</div><!--#content-->
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

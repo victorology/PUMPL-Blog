@@ -40,41 +40,20 @@
 
 <body <?php body_class(); ?>>
 
-<?php  if (is_user_logged_in()) { ?> <!-- An option admin menu that only displays when logged in -->
-<div id="if-logged-in">
-	<div class="container">
-		<p class="left">
-			<a href="<?php bloginfo('url'); ?>/wp-admin/">Control Panel</a>
-			<a href="<?php bloginfo('url'); ?>/wp-admin/edit.php">Posts</a>
-			<a href="<?php bloginfo('url'); ?>/wp-admin/edit.php?post_type=page">Pages</a>
-			<a href="<?php bloginfo('url'); ?>/wp-admin/edit-comments.php">Comments</a>
-			<a href="<?php bloginfo('url'); ?>/wp-admin/upload.php">Media Library</a> 
-		</p>
-		<p class="right">
-			<a href="<?php bloginfo('url'); ?>/wp-admin/options-general.php">Settings</a>
-			<a href="<?php bloginfo('url'); ?>/wp-admin/profile.php">Profile</a>
-			<?php wp_loginout() ?>
-		</p>
-	</div>
-</div><!--#if-logged-in-->
-<?php } ?>
+<div class="container">
 
-<div id="main"><!-- this encompasses the entire Web site -->
-	<header>
-		<div class="container">
-			<?php if( is_front_page() || is_home() ) { ?>
-				<h1><a href="<?php bloginfo('url'); ?>/" title="<?php bloginfo('description'); ?>"><?php bloginfo('name'); ?></a></h1>
-			<?php } else { ?>
-				<h2><a href="<?php bloginfo('url'); ?>/" title="<?php bloginfo('description'); ?>"><?php bloginfo('name'); ?></a></h2>
-			<?php } ?>
-			<p><?php bloginfo('description'); ?></p>
-			<nav class="primary">
-				<?php wp_nav_menu( array('menu' => 'Header Menu' )); ?> <!-- editable within the Wordpress backend -->
-			</nav><!--.primary-->
-			<?php if ( ! dynamic_sidebar( 'Header' ) ) : ?>
-				<!-- Wigitized Header -->
-			<?php endif ?>
-		</div><!--.container-->
-	</header>
-	<div class="clear"></div>
-	<div class="container">
+<div id="header">
+	<?php if( is_front_page() || is_home() ) { ?>
+		<h1><a href="<?php bloginfo('url'); ?>/" title="<?php bloginfo('description'); ?>"><?php bloginfo('name'); ?></a></h1>
+	<?php } else { ?>
+		<h2><a href="<?php bloginfo('url'); ?>/" title="<?php bloginfo('description'); ?>"><?php bloginfo('name'); ?></a></h2>	
+	<?php } ?>
+	<div id="header_all"><a href="#">전체보기</a></div>
+		<div class="header_divider"></div>
+	<div id="header_my"><a href="#">나의펌플</a></div>
+	<div id="header_right">
+		<div id="header_register"><a href="#">회원가입</a></div>
+			<div class="header_divider"></div>
+		<div id="header_login"><a href="#">로그인</a></div>
+	</div> <!-- #header_right -->
+</div> <!-- #header -->
