@@ -47,7 +47,7 @@
 		</nav><!--.oldernewer-->
 		
 	</div> <!-- #content_main -->
-	<div id="see_more"><a href="#">더보기</a></div>
+	<div id="content_bot"></div>
 </div> <!-- #content -->
 
 <?php get_sidebar(); ?>
