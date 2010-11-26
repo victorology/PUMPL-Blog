@@ -34,7 +34,7 @@
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+	<link rel="stylesheet" type="text/css" media="all" href="http://pumpl.com/stylesheets/application.css" />
 	<?php wp_head(); ?> <!-- this is used by many Wordpress features and for plugins to work proporly -->
 </head>
 
@@ -48,12 +48,4 @@
 	<?php } else { ?>
 		<h2><a href="<?php bloginfo('url'); ?>/" title="<?php bloginfo('description'); ?>"><?php bloginfo('name'); ?></a></h2>	
 	<?php } ?>
-	<div id="header_all"><a href="#">전체보기</a></div>
-		<div class="header_divider"></div>
-	<div id="header_my"><a href="#">나의펌플</a></div>
-	<div id="header_right">
-		<div id="header_register"><a href="#">회원가입</a></div>
-			<div class="header_divider"></div>
-		<div id="header_login"><a href="#">로그인</a></div>
-	</div> <!-- #header_right -->
 </div> <!-- #header -->
