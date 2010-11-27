@@ -4,10 +4,6 @@
 	<div class="container">
 		<div id="footer_home"><a href="#">홈</a></div>
 			<div class="header_divider"></div>
-		<div id="footer_all"><a href="#">전체보기</a></div>
-			<div class="header_divider"></div>
-		<div id="footer_my"><a href="#">나의펌플</a></div>
-			<div class="header_divider"></div>
 		<div id="footer_blog"><a href="http://blog.pumpl.com">블로그</a></div>
 			<div class="header_divider"></div>
 		<div id="footer_fun"><a href="http://fun.pumpl.com">펀</a></div>
