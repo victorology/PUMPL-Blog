@@ -18,10 +18,10 @@
 				</p>
 				<p>
 					<strong><?php comments_popup_link('No Comments', '1 Comment', '% Comments'); ?></strong>
-					<br />
+					<!-- <br />
 					Categories: <?php the_category(', ') ?>
 					<br />
-					<?php if (the_tags('Tags: ', ', ', ' ')); ?>
+					<?php if (the_tags('Tags: ', ', ', ' ')); ?> -->
 				</p>
 			</div><!--.postMeta-->
 			

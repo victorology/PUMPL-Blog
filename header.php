@@ -3,17 +3,17 @@
 <head>
 	<title>
 	<?php if ( is_tag() ) {
-			echo 'Tag Archive for &quot;'.$tag.'&quot; | '; bloginfo( 'name' );
+			echo 'Tag Archive for &quot;'.$tag.'&quot; » '; bloginfo( 'name' );
 		} elseif ( is_archive() ) {
-			wp_title(); echo ' Archive | '; bloginfo( 'name' );
+			wp_title(); echo ' Archive » '; bloginfo( 'name' );
 		} elseif ( is_search() ) {
-			echo 'Search for &quot;'.wp_specialchars($s).'&quot; | '; bloginfo( 'name' );
+			echo 'Search for &quot;'.wp_specialchars($s).'&quot; » '; bloginfo( 'name' );
 		} elseif ( is_home() ) {
-			bloginfo( 'name' ); echo ' | '; bloginfo( 'description' );
+			bloginfo( 'name' ); echo ' » '; bloginfo( 'description' );
 		}  elseif ( is_404() ) {
-			echo 'Error 404 Not Found | '; bloginfo( 'name' );
+			echo 'Error 404 Not Found » '; bloginfo( 'name' );
 		} else {
-			echo wp_title( ' | ', false, right ); bloginfo( 'name' );
+			echo wp_title( ' » ', false, right ); bloginfo( 'name' );
 		} ?>
 	</title>
 	<!--
