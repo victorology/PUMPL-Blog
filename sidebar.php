@@ -1,6 +1,37 @@
 <div id="sidebar">
 	<div id="sidebar_top"></div>
 	<div id="sidebar_main">
+		<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+		<script>
+		new TWTR.Widget({
+		  version: 2,
+		  type: 'profile',
+		  rpp: 8,
+		  interval: 6000,
+		  width: 204,
+		  height: 480,
+		  theme: {
+		    shell: {
+		      background: '#181818',
+		      color: '#ffffff'
+		    },
+		    tweets: {
+		      background: '#ffffff',
+		      color: '#181818',
+		      links: '#4f88ac'
+		    }
+		  },
+		  features: {
+		    scrollbar: false,
+		    loop: false,
+		    live: true,
+		    hashtags: true,
+		    timestamp: true,
+		    avatars: false,
+		    behavior: 'all'
+		  }
+		}).render().setUser('PUMPL').start();
+		</script>
 	<?php if ( ! dynamic_sidebar( 'Sidebar' )) : ?>
 
 		<li id="sidebar-search" class="widget">
