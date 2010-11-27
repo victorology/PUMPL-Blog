@@ -12,8 +12,8 @@
 		  height: 480,
 		  theme: {
 		    shell: {
-		      background: '#181818',
-		      color: '#ffffff'
+		      background: '#aecfe4',
+		      color: '#181818'
 		    },
 		    tweets: {
 		      background: '#ffffff',
