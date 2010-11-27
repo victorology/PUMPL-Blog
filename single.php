@@ -1,9 +1,12 @@
 <?php get_header(); ?>
+
 <div id="content">
+	<div id="content_top"></div>
+	<div id="content_main">
 	<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 		<div id="post-<?php the_ID(); ?>" <?php post_class('post'); ?>>
 			<article>
-				<h1><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+				<h1><strong><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></strong></h1>
 				<?php edit_post_link('<small>Edit this entry</small>','',''); ?>
 				<?php echo '<div class="featured-thumbnail">'; the_post_thumbnail(); echo '</div>'; ?> <!-- loades the post's featured thumbnail, requires Wordpress 3.0+ -->
 
@@ -20,17 +23,9 @@
 					Posted on <?php the_time('F j, Y'); ?> at <?php the_time() ?>
 				</p>
 				<p>
-					<?php comments_popup_link('No comments', 'One comment', '% comments', 'comments-link', 'Comments are closed'); ?> 
-				</p>
-				<p>
 					Categories: <?php the_category(', ') ?>
 					<br />
 					<?php the_tags('Tags: ', ', ', ' '); ?>
-				</p>
-				<p>
-					Recieve new post updates: <a href="<?php bloginfo('rss2_url'); ?>" rel="nofollow">Entries (RSS)</a>
-					<br />
-					Recieve follow up comments updates: <?php comments_rss_link('RSS 2.0'); ?>
 				</p>
 			</div><!--#post-meta-->
 			
@@ -67,6 +62,9 @@
 		<?php comments_template( '', true ); ?>
 
 	<?php endwhile; ?><!--end loop-->
-</div><!--#content-->
+	</div> <!-- #content_main -->
+	<div id="content_bot"></div>
+</div> <!-- #content -->
+
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
