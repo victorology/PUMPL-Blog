@@ -22,11 +22,11 @@
 				<p>
 					<?php the_time('Y년m월d일'); ?>, <?php the_time() ?>에 글을 올렸습니다.
 				</p>
-				<p>
+				<!-- <p>
 					Categories: <?php the_category(', ') ?>
 					<br />
 					<?php the_tags('Tags: ', ', ', ' '); ?>
-				</p>
+				</p> -->
 			</div><!--#post-meta-->
 			
 			<!-- If a user fills out their bio info, it's included here -->
