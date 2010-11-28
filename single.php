@@ -20,7 +20,7 @@
 				
 			<div id="post-meta">
 				<p>
-					Posted on <?php the_time('F j, Y'); ?> at <?php the_time() ?>
+					<?php the_time('Y년m월d일'); ?>, <?php the_time() ?>에 글을 올렸습니다.
 				</p>
 				<p>
 					Categories: <?php the_category(', ') ?>

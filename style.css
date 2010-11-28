@@ -1396,7 +1396,7 @@ td {
 	width: 186px;
 	height: 36px;
 	text-indent: -9999px;
-	background: url(images/sidebar_sprite.png) 0 -150px no-repeat;
+	background: url(images/blog_sprite.png) 0 -150px no-repeat;
 }
 
 #comments_header {
@@ -1404,23 +1404,31 @@ td {
 	width: 157px;
 	height: 36px;
 	text-indent: -9999px;
-	background: url(images/sidebar_sprite.png) -200px -150px no-repeat;
+	background: url(images/blog_sprite.png) -200px -150px no-repeat;
 }
 
 #facebook_header {
 	float: left;
+	margin-bottom: 8px;
 	width: 146px;
 	height: 36px;
 	text-indent: -9999px;
-	background: url(images/sidebar_sprite.png) 0 -200px no-repeat;
+	background: url(images/blog_sprite.png) 0 -200px no-repeat;
+}
+
+#facebook_box {
+	float: left;
+	clear: both;
+	background-color: #fff;
 }
 
 #twitter_header {
 	float: left;
+	margin-top: 8px;
 	width: 115px;
 	height: 36px;
 	text-indent: -9999px;
-	background: url(images/sidebar_sprite.png) -200px -200px no-repeat;
+	background: url(images/blog_sprite.png) -200px -200px no-repeat;
 }
 
 article {

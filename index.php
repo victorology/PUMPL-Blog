@@ -14,7 +14,7 @@
 			</div>
 			<div class="post-meta">
 				<p>
-					Written on <?php the_time('F j, Y'); ?> at <?php the_time() ?>, by <?php the_author_posts_link() ?>
+					<?php the_time('Y년m월d일'); ?>, <?php the_time() ?>에 글을 올렸습니다. <!-- by <?php the_author_posts_link() ?> -->
 				</p>
 				<p>
 					<strong><?php comments_popup_link('No Comments', '1 Comment', '% Comments'); ?></strong>
