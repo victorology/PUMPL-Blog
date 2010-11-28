@@ -1431,6 +1431,10 @@ td {
 	background: url(images/blog_sprite.png) -200px -200px no-repeat;
 }
 
+#content a {
+	font-weight: bold;
+}
+
 #content h2 {
 	font-size: 14px;
 	margin-bottom: 6px;
