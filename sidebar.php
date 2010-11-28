@@ -9,7 +9,7 @@
 		  rpp: 8,
 		  interval: 6000,
 		  width: 204,
-		  height: 380,
+		  height: 248,
 		  theme: {
 		    shell: {
 		      background: '#aecfe4',
@@ -32,7 +32,7 @@
 		  }
 		}).render().setUser('PUMPL').start();
 		</script>
-		<script src="http://connect.facebook.net/ko_KR/all.js#xfbml=1"></script><fb:like-box href="http://www.facebook.com/pages/peompeul-PUMPL/104009903004026" width="204" connections="8" stream="false" header="false"></fb:like-box>
+		<div style="background-color:#fff"><script src="http://connect.facebook.net/ko_KR/all.js#xfbml=1"></script><fb:like-box href="http://www.facebook.com/pages/peompeul-PUMPL/104009903004026" width="204" connections="8" stream="false" header="false"></fb:like-box></div>
 	<?php if ( ! dynamic_sidebar( 'Sidebar' )) : ?>
 
 		<li id="sidebar-search" class="widget">
