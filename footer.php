@@ -19,5 +19,18 @@
 </div> <!-- #footer -->
 
 <?php wp_footer(); ?> <!-- this is used by many Wordpress features and for plugins to work proporly -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({appId: '128791437166443', status: true, cookie: true,
+             xfbml: true});
+  };
+  (function() {
+    var e = document.createElement('script'); e.async = true;
+    e.src = document.location.protocol +
+      '//connect.facebook.net/en_US/all.js';
+    document.getElementById('fb-root').appendChild(e);
+  }());
+</script>
 </body>
 </html>
