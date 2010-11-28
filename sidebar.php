@@ -2,11 +2,11 @@
 	<div id="sidebar_top"></div>
 	<div id="sidebar_main">
 		<div id="facebook_header">PUMPL Facebook</div>
-		<div id="facebook_box">
-			<script src="http://connect.facebook.net/ko_KR/all.js#xfbml=1"></script><fb:like-box href="http://www.facebook.com/pages/peompeul-PUMPL/104009903004026" width="204" connections="8" stream="false" header="false"></fb:like-box>
-			<script src="http://widgets.twimg.com/j/2/widget.js"></script>
-		</div> <!-- #facebook_box -->
+		<div style="background-color:#fff; clear:both;">
+			<script src="http://connect.facebook.net/ko_KR/all.js#xfbml=1"></script><fb:like-box href="http://www.facebook.com/pages/peompeul-PUMPL/104009903004026" width="204" connections="10" stream="false" header="false"></fb:like-box>
+		</div>
 		<div id="twitter_header">PUMPL Twitter</div>
+		<script src="http://widgets.twimg.com/j/2/widget.js"></script>
 		<script>
 		new TWTR.Widget({
 		  version: 2,

@@ -1416,12 +1416,6 @@ td {
 	background: url(images/blog_sprite.png) 0 -200px no-repeat;
 }
 
-#facebook_box {
-	float: left;
-	clear: both;
-	background-color: #fff;
-}
-
 #twitter_header {
 	float: left;
 	margin-top: 8px;
