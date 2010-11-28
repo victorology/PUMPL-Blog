@@ -1444,13 +1444,22 @@ td {
 	clear: both;
 }
 
-#authorDescription {
-	margin-left: 8px;
-}
-
-#authorDescription h3 {
+#post-author h3 {
 	margin-bottom: 8px;
 	font-weight: bold;
+}
+
+#author-gravatar img {
+	float: left;
+	margin-top: 4px;
+	width: 88px;
+	height: 88px;
+}
+
+#authorDescription {
+	float: left;
+	margin-left: 10px;
+	width: 590px;
 }
 
 article {
