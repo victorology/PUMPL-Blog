@@ -15,6 +15,11 @@
 			<div class="post-content">
 				<?php the_content(__('Read more'));?>
 			</div>
+			<p>
+				<div style="float:left"><a href="http://twitter.com/share" class="twitter-share-button" data-url="<?php the_permalink() ?>" data-text="<?php the_title(); ?>" data-count="horizontal" data-via="PUMPL">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div>
+				<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="<?php the_permalink() ?>" layout="button_count" show_faces="false" width="225" font="arial"></fb:like>
+			</p>
+			
 			<div class="post-meta">
 				
 				<div class="blog_divider"></div>
