@@ -1213,8 +1213,6 @@ td {
 
 /**** FOOTER *************/
 
-/**** FOOTER *************/
-
 #footer {
 	float: left;
 	padding-top: 8px;
@@ -1345,6 +1343,79 @@ td {
 
 #header h2 a:hover { background-position: -750px -98px; }
 #header h2 a:active { background-position: -750px -146px; }
+
+#header_subscribe {
+	float: left;
+	width: 73px;
+	height: 48px;
+	text-indent: -9999px;
+	background: url(images/index_sprite.png) -800px -300px no-repeat;
+}
+
+#header_twitter a {
+	float: left;
+	width: 85px;
+	height: 48px;
+	text-indent: -9999px;
+	background: url(images/blog_sprite.png) 0 0 no-repeat;
+}
+
+#header_twitter a:hover { background-position: 0 -48px; }
+#header_twitter a:active { background-position: 0 -96px; }
+
+#header_facebook a {
+	float: left;
+	width: 85px;
+	height: 48px;
+	text-indent: -9999px;
+	background: url(images/blog_sprite.png) -100px 0 no-repeat;
+}
+
+#header_facebook a:hover { background-position: -100px -48px; }
+#header_facebook a:active { background-position: -100px -96px; }
+
+#header_gotopumpl a {
+	float: left;
+	width: 127px;
+	height: 48px;
+	text-indent: -9999px;
+	background: url(images/blog_sprite.png) -200px 0 no-repeat;
+}
+
+#header_gotopumpl a:hover { background-position: -200px -48px; }
+#header_gotopumpl a:active { background-position: -200px -96px; }
+
+#latestposts_header {
+	float: left;
+	width: 186px;
+	height: 36px;
+	text-indent: -9999px;
+	background: url(images/sidebar_sprite.png) 0 -150px no-repeat;
+}
+
+#comments_header {
+	float: left;
+	width: 157px;
+	height: 36px;
+	text-indent: -9999px;
+	background: url(images/sidebar_sprite.png) -200px -150px no-repeat;
+}
+
+#facebook_header {
+	float: left;
+	width: 146px;
+	height: 36px;
+	text-indent: -9999px;
+	background: url(images/sidebar_sprite.png) 0 -200px no-repeat;
+}
+
+#twitter_header {
+	float: left;
+	width: 115px;
+	height: 36px;
+	text-indent: -9999px;
+	background: url(images/sidebar_sprite.png) -200px -200px no-repeat;
+}
 
 article {
 	
