@@ -1347,6 +1347,7 @@ td {
 #header_blogright {
 	float: right;
 	margin-right: 18px;
+	width: 421px;
 }
 
 #header_subscribe {
