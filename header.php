@@ -63,4 +63,17 @@
 	<?php } else { ?>
 		<h2><a href="<?php bloginfo('url'); ?>/" title="<?php bloginfo('description'); ?>"><?php bloginfo('name'); ?></a></h2>	
 	<?php } ?>
+	<div id="header_subscribe">구독하기:</div>
+		<div class="header_divider"></div> 
+	<div id="header_twitter">
+		<a href="http://twitter.com/pumpl" target="_blank">펌플 트위터</a>
+	</div> <!-- #header_twitter -->
+		<div class="header_divider"></div>
+	<div id="header_facebook">
+		<a href="http://www.facebook.com/pages/peompeul-PUMPL/104009903004026" target="_blank">펌플 페이스북</a>
+	</div> <!-- #header_facebook -->
+		<div class="header_divider"></div>
+	<div id="header_gotopumpl">
+		<a href="http://pumpl.com">펌플으로 가기</a>
+	</div> <!-- #header_gotopumpl -->
 </div> <!-- #header -->

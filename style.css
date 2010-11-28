@@ -1344,6 +1344,11 @@ td {
 #header h2 a:hover { background-position: -750px -98px; }
 #header h2 a:active { background-position: -750px -146px; }
 
+#header_blogright {
+	float: right;
+	margin-right: 18px;
+}
+
 #header_subscribe {
 	float: left;
 	width: 73px;
