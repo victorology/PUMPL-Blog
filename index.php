@@ -8,14 +8,23 @@
 		<?php endif ?>
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			<h2><strong><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></strong></h2>
+			
+			<div class="blog_divider"></div>
+			
 			<?php echo '<div class="featured-thumbnail">'; the_post_thumbnail(); echo '</div>'; ?> <!-- loades the post's featured thumbnail, requires Wordpress 3.0+ -->
 			<div class="post-content">
 				<?php the_content(__('Read more'));?>
 			</div>
 			<div class="post-meta">
+				
+				<div class="blog_divider"></div>
+				
 				<p>
 					<?php the_time('Y년m월d일'); ?>, <?php the_time() ?>에 글을 올렸습니다. <!-- by <?php the_author_posts_link() ?> -->
 				</p>
+				
+				<div class="blog_divider"></div>
+				
 				<p>
 					<strong><?php comments_popup_link('No Comments', '1 Comment', '% Comments'); ?></strong>
 					<!-- <br />
