@@ -698,6 +698,7 @@ strong {
 	margin-left: 4px;
 	color: #4e88ac;
 	text-decoration: underline;
+	*clear: right; /* IE6 and IE7 fix so count is on right */
 }
 
 .breadcrumbs {
