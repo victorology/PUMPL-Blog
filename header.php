@@ -34,6 +34,7 @@
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+	<link rel="stylesheet" type="text/css" media="all" href="http://pumpl.com/stylesheets/application.css" />
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 	<?php wp_head(); ?> <!-- this is used by many Wordpress features and for plugins to work proporly -->
 	
