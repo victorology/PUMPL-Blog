@@ -29,7 +29,7 @@
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo( 'name' ); ?>" href="<?php bloginfo( 'rss2_url' ); ?>" />
 	<link rel="alternate" type="application/atom+xml" title="<?php bloginfo( 'name' ); ?>" href="<?php bloginfo( 'atom_url' ); ?>" />
 	<!-- Loads jQuery if it hasn't been loaded already -->
-	<?php wp_enqueue_script("jquery"); ?>
+	<script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
 	<!-- The HTML5 Shim is required for older browsers, mainly older versions IE -->
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
