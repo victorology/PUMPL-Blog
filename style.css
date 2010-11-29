@@ -110,6 +110,10 @@ Description: This theme is the official theme for the PUMPL Blog at http://blog.
 	margin-top: 6px;
 }
 
+#post-content p {
+	margin-bottom: 10px;
+}
+
 .blog_divider {
 	float: left;
 	margin-bottom: 8px;
