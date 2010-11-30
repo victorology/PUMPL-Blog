@@ -7,9 +7,7 @@
 			<!--Wigitized 'Alert' for the home page-->
 		<?php endif ?>
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-			<h2><strong><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></strong></h2>
-			
-			<div class="blog_divider"></div>
+			<h2><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 			
 			<?php echo '<div class="featured-thumbnail">'; the_post_thumbnail(); echo '</div>'; ?> <!-- loades the post's featured thumbnail, requires Wordpress 3.0+ -->
 			<div class="post-content">

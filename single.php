@@ -6,12 +6,9 @@
 	<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 		<div id="post-<?php the_ID(); ?>" <?php post_class('post'); ?>>
 			<article>
-				<h1><strong><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></strong></h1>
+				<h1><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 				
-				<div class="blog_divider"></div>
-				
-				<?php edit_post_link('<small>Edit this entry</small>','',''); ?>
-				<?php echo '<div class="featured-thumbnail">'; the_post_thumbnail(); echo '</div>'; ?> <!-- loades the post's featured thumbnail, requires Wordpress 3.0+ -->
+				<?php echo '<div class="featured-thumbnail">'; the_post_thumbnail(); echo '</div>'; ?> <!-- loads the post's featured thumbnail, requires Wordpress 3.0+ -->
 
 				<div id="post-content">
 					<?php the_content(); ?>
@@ -39,18 +36,16 @@
 				</p> -->
 			</div><!--#post-meta-->
 			
-			<div class="blog_divider"></div>
-			
 			<!-- If a user fills out their bio info, it's included here -->
 			<div id="post-author">
-				<h3>이 글을 <?php the_author_posts_link() ?>가 작성 했습니다.</h3>
 				<div id="author-gravatar">
 					<!-- This avatar is the user's gravatar (http://gravatar.com) based on their administrative email address -->
 					<?php echo get_avatar( get_the_author_meta('user_email'), $size = '88', $default = '<path_to_url>' ); ?>
 				</div><!--#author-gravatar -->
+				<h3><?php the_author_posts_link() ?></h3>
 				<div id="authorDescription">
 					<?php the_author_meta('description') ?> 
-					<p><a href="http://twitter.com/victorology" target="_blank">빅터의 트위터</a> | <a href="http://me2day.net/victory" target="_blank">빅터의 미투데이</a></p>
+					<p><a href="http://twitter.com/victorology" target="_blank">트위터</a> | <a href="http://me2day.net/victory" target="_blank">미투데이</a></p>
 					<!-- <div id="author-link">
 						<p>View all posts by: <?php the_author_posts_link() ?></p>
 					</div> -->

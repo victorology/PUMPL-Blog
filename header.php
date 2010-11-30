@@ -66,7 +66,6 @@
 	<?php } ?>
 	<div id="header_blogright">
 		<div id="header_subscribe">구독하기:</div>
-			<div class="header_divider"></div> 
 		<div id="header_twitter">
 			<a href="http://twitter.com/pumpl" target="_blank">펌플 트위터</a>
 		</div> <!-- #header_twitter -->
