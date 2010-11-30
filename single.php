@@ -8,6 +8,12 @@
 			<article>
 				<h1><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 				
+				<ul class="postmetadata">
+					<li>By: <?php the_author_posts_link() ?></li>
+					<li><?php the_time('Y년m월d일'); ?></li>
+					<li><?php comments_popup_link('No Comments', '1 Comment', '% Comments'); ?></li>
+				</ul>
+				
 				<?php echo '<div class="featured-thumbnail">'; the_post_thumbnail(); echo '</div>'; ?> <!-- loads the post's featured thumbnail, requires Wordpress 3.0+ -->
 
 				<div id="post-content">
@@ -18,23 +24,14 @@
 				</div><!--#post-content-->
 			<article>
 				
-			<p>
-				<div style="float:left"><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="PUMPL">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div>
-				<script src="http://connect.facebook.net/ko_KR/all.js#xfbml=1"></script><fb:like layout="button_count" show_faces="false" width="225" font="arial"></fb:like>
-			</p>
-				
-			<div class="blog_divider"></div>
-				
-			<div id="post-meta">
-				<p>
-					<?php the_time('Y년m월d일'); ?>, <?php the_time() ?>에 글을 올렸습니다.
-				</p>
-				<!-- <p>
-					Categories: <?php the_category(', ') ?>
-					<br />
-					<?php the_tags('Tags: ', ', ', ' '); ?>
-				</p> -->
-			</div><!--#post-meta-->
+				<div class="share_buttons">
+					<div class="share_twitter">
+						<a href="http://twitter.com/share" class="twitter-share-button" data-url="<?php the_permalink() ?>" data-text="<?php the_title(); ?>" data-count="horizontal" data-via="PUMPL">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+					</div> <!-- .share_twitter -->
+					<div class="share_facebook">
+						<script src="http://connect.facebook.net/ko_KR/all.js#xfbml=1"></script><fb:like href="<?php the_permalink() ?>" layout="button_count" show_faces="false" width="225" font="arial"></fb:like>
+					</div> <!-- .share_facebook -->
+				</div> <!-- .share_buttons -->
 			
 			<!-- If a user fills out their bio info, it's included here -->
 			<div id="post-author">

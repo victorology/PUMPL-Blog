@@ -76,17 +76,54 @@ Description: This theme is the official theme for the PUMPL Blog at http://blog.
 }
 
 #content h1 {
+	float: left;
+	margin-bottom: 10px;
 	font-size: 24px;
 	font-weight: bolder;
 }
 
 #content h2 {
+	float: left;
+	margin-bottom: 10px;
 	font-size: 24px;
 	font-weight: bolder;
 }
 
-#post-content p {
+#content p {
+	margin-bottom: 5px;
+	clear: both;
+}
+
+ul.postmetadata {
+	float: left;
 	margin-bottom: 10px;
+	list-style: none;
+	clear: both;
+}
+
+ul.postmetadata li {
+	float: left;
+	padding: 0 8px;
+	border-right: 1px solid #e8e8e8;
+}
+
+.share_buttons {
+	float: left;
+	margin-top: 8px;
+	clear: both;
+}
+
+.share_twitter {
+	float: left;
+}
+
+.share_facebook {
+	float: left;
+}
+
+.post-meta {
+	float: left;
+	clear: both;
 }
 
 /**** SIDEBAR *************/
@@ -136,7 +173,7 @@ Description: This theme is the official theme for the PUMPL Blog at http://blog.
 
 #post-author {
 	float: left;
-	margin-bottom: 20px;
+	margin: 10px 0 20px 0;
 	padding: 20px;
 	width: 648px;
 	background-color: #eee;
@@ -174,9 +211,7 @@ article {
 		.pagination {
 			
 		}
-.post-meta {
-	
-}
+		
 .post-navigation {
 	
 }
