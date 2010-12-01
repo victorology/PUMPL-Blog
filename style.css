@@ -87,6 +87,7 @@ Description: This theme is the official theme for the PUMPL Blog at http://blog.
 	margin-bottom: 10px;
 	font-size: 24px;
 	font-weight: bolder;
+	clear: both;
 }
 
 #content p {
@@ -123,6 +124,7 @@ ul.postmetadata li {
 
 .post-meta {
 	float: left;
+	margin-bottom: 10px;
 	clear: both;
 }
 

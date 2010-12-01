@@ -39,6 +39,8 @@
 				</p>
 			</div><!--.postMeta-->
 			
+			<div class="clear"></div>
+			
 		<?php endwhile; else: ?>
 			<div class="no-results">
 				<p><strong>There has been an error.</strong></p>
