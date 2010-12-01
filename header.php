@@ -23,6 +23,9 @@
 	<meta name="keywords" content="<?php wp_title(); echo ' , '; bloginfo( 'name' ); echo ' , '; bloginfo( 'description' ); ?>" />
 	<meta name="description" content="<?php wp_title(); echo ' | '; bloginfo( 'description' ); ?>" />
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
+	<meta property="og:title" content="<?php the_title(); ?>" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="<?php the_permalink() ?>" />
 	<meta property="og:image" content="http://pumpl.com/images/pumpl_logo.png"/>
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="index" title="<?php bloginfo( 'name' ); ?>" href="<?php echo get_option('home'); ?>/" />
