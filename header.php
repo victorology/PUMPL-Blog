@@ -27,6 +27,9 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="<?php the_permalink() ?>" />
 	<meta property="og:image" content="http://pumpl.com/images/pumpl_logo.png"/>
+	<meta property="og:site_name" content="PUMPL"/>
+	<meta property="og:app_id" content="170977086255854" />
+	<meta property="og:description" content="<?php bloginfo('description'); ?>" />
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="index" title="<?php bloginfo( 'name' ); ?>" href="<?php echo get_option('home'); ?>/" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
