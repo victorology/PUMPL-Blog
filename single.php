@@ -11,7 +11,6 @@
 				<ul class="postmetadata">
 					<li>By: <?php the_author_posts_link() ?></li>
 					<li><?php the_time('Y년m월d일'); ?></li>
-					<li><?php comments_popup_link('No Comments', '1 Comment', '% Comments'); ?></li>
 				</ul>
 				
 				<?php echo '<div class="featured-thumbnail">'; the_post_thumbnail(); echo '</div>'; ?> <!-- loads the post's featured thumbnail, requires Wordpress 3.0+ -->
