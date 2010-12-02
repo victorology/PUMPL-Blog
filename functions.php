@@ -1,22 +1,23 @@
 <?php
-	// enables wigitized sidebars
-	if ( function_exists('register_sidebar') )
 	
 	// Open Graph: fetch first image
 	
 	function catch_that_image() {
-	 global $post, $posts;
-	 $first_img = '';
-	 ob_start();
-	 ob_end_clean();
-	 $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
-	 $first_img = $matches [1] [0];
+	global $post, $posts;
+	$first_img = '';
+	ob_start();
+	ob_end_clean();
+	$output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
+	$first_img = $matches [1] [0];
 
-	 if(empty($first_img)){ //Defines a default image
-	 $first_img = "/images/default.jpg";
-	 }
-	 return $first_img;
+	if(empty($first_img)){ //Defines a default image
+	$first_img = "http://pumpl.com/images/pumpl_logo.png";
 	}
+	return $first_img;
+	}
+	
+	// enables wigitized sidebars
+	if ( function_exists('register_sidebar') )
 
 	// Sidebar Widget
 	// Location: the sidebar

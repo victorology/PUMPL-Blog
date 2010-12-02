@@ -24,7 +24,6 @@
 	<meta name="description" content="<?php wp_title(); echo ' | '; bloginfo( 'description' ); ?>" />
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<!-- Start Facebook Opengraph -->
-	<?php if (is_single () ) { ?>
 	<meta property="fb:admins" content="500912461"/>
 	<meta property="fb:app_id" content="170977086255854" />
 	<meta property="og:type" content="article"/>
