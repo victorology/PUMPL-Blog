@@ -23,13 +23,26 @@
 	<meta name="keywords" content="<?php wp_title(); echo ' , '; bloginfo( 'name' ); echo ' , '; bloginfo( 'description' ); ?>" />
 	<meta name="description" content="<?php wp_title(); echo ' | '; bloginfo( 'description' ); ?>" />
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
-	<meta property="og:title" content="<?php the_title(); ?>" />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="<?php the_permalink() ?>" />
-	<meta property="og:image" content="http://pumpl.com/images/pumpl_logo.png"/>
-	<meta property="og:site_name" content="PUMPL"/>
-	<meta property="og:app_id" content="170977086255854" />
-	<meta property="og:description" content="<?php bloginfo('description'); ?>" />
+	<!-- Start Facebook Opengraph -->
+	<?php if (is_single () ) { ?>
+	<meta property="fb:admins" content="500912461"/>
+	<meta property="fb:app_id" content="170977086255854" />
+	<meta property="og:type" content="article"/>
+	<meta property="og:title" content="<?php the_title() ?>"/>
+	<meta property="og:site_name" content="<?php bloginfo('name') ?>"/>
+	<?php
+	function og_meta_desc() {
+	global $post;
+	$meta = strip_tags($post->post_content);
+	$meta = str_replace(array("\n", "\r", "\t"), ' ', $meta);
+	$meta = substr($meta, 0, 200);
+ 	echo "<meta property=\"og:description\" content=\"$meta\"/>";
+	}
+	og_meta_desc();
+ 	?>
+	<meta property="og:url" content="<?php the_permalink() ?>"/>
+	<meta property="og:image" content="<?php echo catch_that_image() ?>"/>
+	<!-- End Facebook Opengraph -->
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="index" title="<?php bloginfo( 'name' ); ?>" href="<?php echo get_option('home'); ?>/" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
