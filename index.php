@@ -15,7 +15,7 @@
 				<li><?php comments_popup_link('No Comments', '1 Comment', '% Comments'); ?></li>
 			</ul>
 			
-			<?php echo '<div class="featured-thumbnail">'; the_post_thumbnail(); echo '</div>'; ?> <!-- loades the post's featured thumbnail, requires Wordpress 3.0+ -->
+			<?php echo '<div class="featured-thumbnail">'; the_post_thumbnail(); echo '</div>'; ?> <!-- loads the post's featured thumbnail, requires Wordpress 3.0+ -->
 			<div class="post-content">
 				<?php the_content(__('Read more'));?>
 			</div>
