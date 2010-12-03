@@ -148,7 +148,12 @@ ul.postmetadata li {
 }
 
 #new_posts ul {
-	margin-left: 13px;
+	list-style: none;
+	line-height: 125%;
+}
+
+#new_posts ul li {
+	padding: 4px 0;
 }
 
 #comments_header {

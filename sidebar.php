@@ -9,7 +9,7 @@
 				  $number_recents_posts = 4; //Can be how much you want
 			      $recent_posts = wp_get_recent_posts( $number_recents_posts );
 			      foreach($recent_posts as $post){
-			        echo '<li><a href="' . get_permalink($post["ID"]) . '" title="Look '.$post["post_title"].'" >' .   $post["post_title"].'</a> </li> ';
+			        echo '<li><a href="' . get_permalink($post["ID"]) . '" title="Look '.$post["post_title"].'" >' . $post["post_title"].'</a></li>';
 				} ?>
 			</ul>
 		</div>
