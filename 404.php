@@ -1,13 +1,21 @@
 <?php get_header(); ?>
 <div id="content">
-	<div id="error404" class="post">
-		<h1>Error 404 Not Found</h1>
-		<div class="postContent">
-			<p>Oops. Fail. The page cannot be found.</p>
-			<p>Please check your URL or use the search form below.</p>
-			<?php get_search_form(); ?> <!-- outputs the default Wordpress search form-->
-		</div><!--.post-content-->
-	</div><!--#error404 .post-->
-</div><!--#content-->
+	<div id="content_top"></div>
+	<div id="content_main">
+		
+		<?php if (smart404_loop()) : ?>
+		<p>혹시 밑에 있는 포스트를 찾고 있으세요?:</p>
+		<?php while (have_posts()) : the_post(); ?>
+		<h4><a href="<?php the_permalink() ?>"
+		  rel="bookmark"
+		title="<?php the_title_attribute(); ?>">
+		<?php the_title(); ?></a></h4>
+		  <small><?php the_excerpt(); ?></small>
+		<?php endwhile; ?>
+		<?php endif; ?>
+	
+	</div> <!-- #content_main -->
+	<div id="content_bot"></div>
+</div> <!-- #content -->
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
