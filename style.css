@@ -132,16 +132,28 @@ ul.postmetadata li {
 
 /**** SIDEBAR *************/
 
-#latestposts_header {
+#new_posts_header {
 	float: left;
-	width: 186px;
+	margin-bottom: 8px;
+	width: 154px;
 	height: 36px;
 	text-indent: -9999px;
 	background: url(images/blog_sprite.png) 0 -150px no-repeat;
 }
 
+#new_posts {
+	float: left;
+	margin-bottom: 8px;
+	clear: both;
+}
+
+#new_posts ul {
+	margin-left: 13px;
+}
+
 #comments_header {
 	float: left;
+	margin-bottom: 8px;
 	width: 157px;
 	height: 36px;
 	text-indent: -9999px;

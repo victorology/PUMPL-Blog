@@ -1,6 +1,18 @@
 <div id="sidebar">
 	<div id="sidebar_top"></div>
 	<div id="sidebar_main">
+		<div id="new_posts_header">최근의 글</div>
+		<div id="new_posts">
+			<?php wp_get_recent_posts( $num ) ?>
+			<ul>
+			    <?php
+				  $number_recents_posts = 4; //Can be how much you want
+			      $recent_posts = wp_get_recent_posts( $number_recents_posts );
+			      foreach($recent_posts as $post){
+			        echo '<li><a href="' . get_permalink($post["ID"]) . '" title="Look '.$post["post_title"].'" >' .   $post["post_title"].'</a> </li> ';
+				} ?>
+			</ul>
+		</div>
 		<div id="facebook_header">PUMPL Facebook</div>
 		<div style="background-color:#fff; clear:both;">
 			<script src="http://connect.facebook.net/ko_KR/all.js#xfbml=1"></script><fb:like-box href="http://www.facebook.com/pages/peompeul-PUMPL/104009903004026" width="204" connections="10" stream="false" header="false"></fb:like-box>
