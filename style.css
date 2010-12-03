@@ -80,6 +80,7 @@ Description: This theme is the official theme for the PUMPL Blog at http://blog.
 	margin-bottom: 10px;
 	font-size: 24px;
 	font-weight: bolder;
+	line-height: 140%;
 }
 
 #content h2 {
@@ -87,6 +88,7 @@ Description: This theme is the official theme for the PUMPL Blog at http://blog.
 	margin-bottom: 10px;
 	font-size: 24px;
 	font-weight: bolder;
+	line-height: 125%;
 	clear: both;
 }
 
