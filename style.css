@@ -157,10 +157,11 @@ ul.postmetadata li {
 
 #pumpl_teaser a {
 	float: left;
+	margin: 10px 0 5px 0;
 	width: 688px;
 	height: 40px;
 	text-indent: -9999px;
-	background: url(images/blog/sprite.png) 0 -150px no-repeat;
+	background: url(images/blog_sprite.png) 0 -150px no-repeat;
 }
 
 #pumpl_teaser a:hover { background-position: 0 -190px; }
