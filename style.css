@@ -155,6 +155,16 @@ ul.postmetadata li {
 	clear: both;
 }
 
+#pumpl_teaser a {
+	float: left;
+	width: 688px;
+	height: 40px;
+	text-indent: -9999px;
+	background: url(images/blog/sprite.png) 0 -150px no-repeat;
+}
+
+#pumpl_teaser a:hover { background-position: 0 -190px; }
+
 /**** SIDEBAR *************/
 
 #new_posts_header {
@@ -163,7 +173,7 @@ ul.postmetadata li {
 	width: 154px;
 	height: 36px;
 	text-indent: -9999px;
-	background: url(images/blog_sprite.png) 0 -150px no-repeat;
+	background: url(images/blog_sprite.png) -350px 0 no-repeat;
 }
 
 #new_posts {

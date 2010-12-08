@@ -23,14 +23,16 @@
 				</div><!--#post-content-->
 			<article>
 				
-				<div class="share_buttons">
-					<div class="share_twitter">
-						<a href="http://twitter.com/share" class="twitter-share-button" data-url="<?php the_permalink() ?>" data-text="<?php the_title(); ?>" data-count="horizontal" data-via="PUMPL" data-counturl="<?php the_permalink() ?>" data-related="victorology:펌플의 창업자">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-					</div> <!-- .share_twitter -->
-					<div class="share_facebook">
-						<script src="http://connect.facebook.net/ko_KR/all.js#xfbml=1"></script><fb:like href="<?php the_permalink() ?>" layout="button_count" show_faces="false" width="225" font="arial"></fb:like>
-					</div> <!-- .share_facebook -->
-				</div> <!-- .share_buttons -->
+			<div class="share_buttons">
+				<div class="share_twitter">
+					<a href="http://twitter.com/share" class="twitter-share-button" data-url="<?php the_permalink() ?>" data-text="<?php the_title(); ?>" data-count="horizontal" data-via="PUMPL" data-counturl="<?php the_permalink() ?>" data-related="victorology:펌플의 창업자">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+				</div> <!-- .share_twitter -->
+				<div class="share_facebook">
+					<script src="http://connect.facebook.net/ko_KR/all.js#xfbml=1"></script><fb:like href="<?php the_permalink() ?>" layout="button_count" show_faces="false" width="225" font="arial"></fb:like>
+				</div> <!-- .share_facebook -->
+			</div> <!-- .share_buttons -->
+				
+			<div id="pumpl_teaser"><a href="http://pumpl.com">PUMPL » 최고의 할인을 '펌' 하는 피플, 펌플! 대한민국의 모든 할인 정보를 펌플에서 만나보세요!</a></div>
 			
 			<!-- If a user fills out their bio info, it's included here -->
 			<div id="post-author">
@@ -53,12 +55,12 @@
 		<div class="newer-older">
 			<div class="older">
 				<p>
-					<?php previous_post_link('%link', '&laquo; Previous post') ?> <!-- outputs a link to the previous post, if there is one -->
+					<?php previous_post_link('%link', '&laquo; 이전') ?> <!-- outputs a link to the previous post, if there is one -->
 				</p>
 			</div><!--.older-->
 			<div class="newer">
 				<p>
-					<?php next_post_link('%link', 'Next Post &raquo;') ?> <!-- outputs a link to the next post, if there is one -->
+					<?php next_post_link('%link', '다음 &raquo;') ?> <!-- outputs a link to the next post, if there is one -->
 				</p>
 			</div><!--.older-->
 		</div><!--.newer-older-->
