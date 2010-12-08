@@ -41,8 +41,8 @@ Description: This theme is the official theme for the PUMPL Blog at http://blog.
 	background: url(http://pumpl.com/images/index_sprite.png) -650px -450px;
 }
 
-#header_blog a:hover { background-position: -650px -498px; }
-#header_blog a:active { background-position: -650px -546px; }
+#header_fun a:hover { background-position: -650px -498px; }
+#header_fun a:active { background-position: -650px -546px; }
 
 #header_blogright {
 	float: right;
@@ -83,7 +83,6 @@ Description: This theme is the official theme for the PUMPL Blog at http://blog.
 
 #header_gotopumpl a {
 	float: left;
-	margin-left: 18px;
 	width: 127px;
 	height: 48px;
 	text-indent: -9999px;

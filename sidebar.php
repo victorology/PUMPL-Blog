@@ -15,7 +15,7 @@
 		</div>
 		<div id="facebook_header">PUMPL Facebook</div>
 		<div style="background-color:#fff; clear:both;">
-			<script src="http://connect.facebook.net/ko_KR/all.js#xfbml=1"></script><fb:like-box href="http://www.facebook.com/pages/peompeul-PUMPL/104009903004026" width="204" connections="10" stream="false" header="false"></fb:like-box>
+			<script src="http://connect.facebook.net/ko_KR/all.js#xfbml=1"></script><fb:like-box href="http://www.facebook.com/mypumpl" width="204" connections="10" stream="false" header="false"></fb:like-box>
 		</div>
 		<div id="twitter_header">PUMPL Twitter</div>
 		<div style="clear:both">

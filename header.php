@@ -86,6 +86,7 @@
 	<div id="header_blog">
 		<a href="http://blog.pumpl.com">펌플 블로그</a>
 	</div> <!-- #header_blog -->
+		<div class="header_divider"></div>
 	<div id="header_fun">
 		<a href="http://fun.pumpl.com">펌플 펀</a>
 	</div> <!-- #header_fun -->
