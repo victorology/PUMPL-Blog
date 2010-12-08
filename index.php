@@ -52,12 +52,12 @@
 		<nav class="oldernewer">
 			<div class="older">
 				<p>
-					<?php next_posts_link('&laquo; Older Entries') ?>
+					<?php next_posts_link('&laquo; 이전') ?>
 				</p>
 			</div><!--.older-->
 			<div class="newer">
 				<p>
-					<?php previous_posts_link('Newer Entries &raquo;') ?>
+					<?php previous_posts_link('다음 &raquo;') ?>
 				</p>
 			</div><!--.older-->
 		</nav><!--.oldernewer-->

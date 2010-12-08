@@ -79,9 +79,9 @@
 
 <div id="header">
 	<?php if( is_front_page() || is_home() ) { ?>
-		<h1><a href="<?php bloginfo('url'); ?>/" title="<?php bloginfo('description'); ?>"><?php bloginfo('name'); ?></a></h1>
+		<h1><a href="http://pumpl.com">PUMPL</a></h1>
 	<?php } else { ?>
-		<h2><a href="<?php bloginfo('url'); ?>/" title="<?php bloginfo('description'); ?>"><?php bloginfo('name'); ?></a></h2>	
+		<h2><a href="http://pumpl.com">PUMPL</a></h2>	
 	<?php } ?>
 	<div id="header_blog">
 		<a href="http://blog.pumpl.com">펌플 블로그</a>
