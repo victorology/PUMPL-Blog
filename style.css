@@ -21,22 +21,33 @@ Description: This theme is the official theme for the PUMPL Blog at http://blog.
 #header h2 a:hover { background-position: -750px -98px; }
 #header h2 a:active { background-position: -750px -146px; }
 
-#header_gotopumpl a {
+#header_blog a {
 	float: left;
 	margin-left: 18px;
-	width: 127px;
+	width: 53px;
 	height: 48px;
 	text-indent: -9999px;
-	background: url(images/blog_sprite.png) -200px 0 no-repeat;
+	background: url(http://pumpl.com/images/index_sprite.png) -550px -450px;
 }
 
-#header_gotopumpl a:hover { background-position: -200px -48px; }
-#header_gotopumpl a:active { background-position: -200px -96px; }
+#header_blog a:hover { background-position: -550px -498px; }
+#header_blog a:active { background-position: -550px -546px; }
+
+#header_fun a {
+	float: left;
+	width: 21px;
+	height: 48px;
+	text-indent: -9999px;
+	background: url(http://pumpl.com/images/index_sprite.png) -650px -450px;
+}
+
+#header_blog a:hover { background-position: -650px -498px; }
+#header_blog a:active { background-position: -650px -546px; }
 
 #header_blogright {
 	float: right;
 	margin-right: 18px;
-	width: 268px;
+	width: 412px;
 }
 
 #header_subscribe {
@@ -69,6 +80,18 @@ Description: This theme is the official theme for the PUMPL Blog at http://blog.
 
 #header_facebook a:hover { background-position: -100px -48px; }
 #header_facebook a:active { background-position: -100px -96px; }
+
+#header_gotopumpl a {
+	float: left;
+	margin-left: 18px;
+	width: 127px;
+	height: 48px;
+	text-indent: -9999px;
+	background: url(images/blog_sprite.png) -200px 0 no-repeat;
+}
+
+#header_gotopumpl a:hover { background-position: -200px -48px; }
+#header_gotopumpl a:active { background-position: -200px -96px; }
 
 /**** CONTENT *************/
 
