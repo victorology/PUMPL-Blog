@@ -188,7 +188,7 @@ ul.postmetadata li {
 	width: 157px;
 	height: 36px;
 	text-indent: -9999px;
-	background: url(images/blog_sprite.png) -200px -150px no-repeat;
+	background: url(images/blog_sprite.png) -550px 0 no-repeat;
 }
 
 #facebook_header {
@@ -198,7 +198,7 @@ ul.postmetadata li {
 	height: 36px;
 	text-indent: -9999px;
 	*clear: both;
-	background: url(images/blog_sprite.png) 0 -200px no-repeat;
+	background: url(images/blog_sprite.png) -350px -50px no-repeat;
 }
 
 #twitter_header {
@@ -208,7 +208,7 @@ ul.postmetadata li {
 	height: 36px;
 	text-indent: -9999px;
 	*clear: both;
-	background: url(images/blog_sprite.png) -200px -200px no-repeat;
+	background: url(images/blog_sprite.png) -550px -50px no-repeat;
 }
 
 .blog_divider {
